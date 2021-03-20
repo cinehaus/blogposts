@@ -10,7 +10,8 @@
     <meta name="googlebot-news" content="noindex" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
-    <title>Axel Bambach | Meine Gedanken</title>
+    <title>Axel Bambach | Mein Blog</title>
+    <script src="https://unpkg.com/feather-icons"></script>
     <!-- CSS -->
     <style>
       body {
@@ -75,13 +76,33 @@
         margin: 0;
       }
 
+      footer {
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        line-height: 2;
+        margin-top: 2em;
+        padding: 5em 0;
+        text-align: center;
+      }
+
+      footer ul {
+        margin: 0;
+        list-style: none;
+      }
+
+      .icon {
+        stroke-width: 1px;
+        top: 5px;
+        position: relative;
+      }
+
       .container {
         margin: 0 auto;
         max-width: 768px;
       }
 
       .child {
-        /* border-bottom: 1px solid #222; */
         display: grid;
         min-height: 100vh;
         padding: 0 3em;
@@ -89,7 +110,6 @@
       }
 
       .children {
-        border-bottom: 1px solid #222;
         padding: 8em 3em 2em 5em;
         text-align: left;
       }
@@ -105,8 +125,21 @@
         <h1>h1 The quick brown fox jumps over the lazy dog.</h1>
         <h2>h2 The quick brown fox jumps over the lazy dog.</h2>
         <h3>h3 Subheadline</h3>
-        <p>Text und <a href="">Ankertag</a></p>
+        <p><i class="icon" data-feather="user"></i> Axel Bambach&nbsp;&nbsp;&nbsp;<i class="icon" data-feather="clipboard"></i> 20 March 2021 und <a href="">Ankertag</a></p>
       </div>
     </div>
+    <footer>
+      <ul>
+        <li><a href=""><i class="icon" data-feather="send"></i></a>&nbsp;&nbsp;Write me an email</li>
+      </ul>
+      <ul>
+        <li><a href=""><i class="icon" data-feather="edit"></i></a>&nbsp;&nbsp;Impressum</li>
+        <li><a href=""><i class="icon" data-feather="alert-circle"></i></a>&nbsp;&nbsp;Legal Stuff</li>
+        <li><a href=""><i class="icon" data-feather="instagram"></i></a>&nbsp;&nbsp;Instagram</li>
+      </ul>
+    </footer>
+    <script>
+      feather.replace()
+    </script>
   </body>
 </html>
