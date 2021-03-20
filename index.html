@@ -8,45 +8,105 @@
     <meta name="robots" content="noindex, nofollow" />
     <meta name="googlebot" content="noindex" />
     <meta name="googlebot-news" content="noindex" />
-    <title>blog.bambachmail.com</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <title>Axel Bambach | Meine Gedanken</title>
     <!-- CSS -->
     <style>
       body {
         background-color: #f2f2f2;
         color: #222;
-        display: grid;
         font-family: system, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
           Bahnschrift, Oxygen-Sans, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans',
           Roboto, sans-serif;
-        height: 100vh;
         margin: 0;
         overflow: auto;
-        place-items: center;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
       }
 
-      .child {
-        padding: 0 3em;
-        text-align: center;
-        max-width: 1024px;
+      a {
+        color: #4da2ff;
+        text-decoration: none;
       }
 
-      h1 {
-        font-size: 1.2rem;
-        font-weight: normal;
-        margin: 0
+      a:hover, 
+      a:active, 
+      a:focus {
+        color: #007aff;
       }
 
       p {
+        font-size: 18px;
+        font-weight: normal;
         line-height: 1.25;
         margin: 1em 0 0 0;
+      }
+
+      h1 {
+        color: #b2b2b2;
+        font-family: 'PT Serif', serif;
+        font-size: 44px;
+        font-weight: normal;
+        line-height: 1.125;
+        margin: 0;
+      }
+
+      h2 {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1.1;
+        margin: 0;
+      }
+
+      h3 {
+        font-size: 32px;
+        font-weight:300;
+        letter-spacing: .004em;
+        line-height: 1.125;
+        margin: 8px 0 0 0;
+      }
+
+      hr {
+        background-color: gray;
+        border-width: 0;
+        color: gray;
+        height: 1px;
+        margin: 0;
+      }
+
+      .container {
+        margin: 0 auto;
+        max-width: 768px;
+      }
+
+      .child {
+        /* border-bottom: 1px solid #222; */
+        display: grid;
+        min-height: 100vh;
+        padding: 0 3em;
+        place-items: center;
+      }
+
+      .children {
+        border-bottom: 1px solid #222;
+        padding: 8em 3em 2em 5em;
+        text-align: left;
       }
     </style>
   </head>
   <body>
-    <div class="child">
-      <h1>Stille.</h1>
+    <div class="container">
+      <div class="child">
+        <p>Stille.</p>
+      </div>
+      <!-- <hr> -->
+      <div class="children">
+        <h1>h1 The quick brown fox jumps over the lazy dog.</h1>
+        <h2>h2 The quick brown fox jumps over the lazy dog.</h2>
+        <h3>h3 Subheadline</h3>
+        <p>Text und <a href="">Ankertag</a></p>
+      </div>
     </div>
   </body>
 </html>
