@@ -10,7 +10,7 @@
     <meta name="googlebot-news" content="noindex" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
-    <title>Axel Bambach | Mein Blog</title>
+    <title>Bambach Blog | News and Thoughts and Insights</title>
     <script src="https://unpkg.com/feather-icons"></script>
     <!-- CSS -->
     <style>
@@ -83,10 +83,37 @@
       .icon {
         position: relative;
         stroke-width: 1px;
-        top: 5px;
+        top: 6px;
       }
 
-      .container {
+      header {
+        background-color: #fff;
+        margin: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+      }
+
+      .header-container {
+        margin: 0 auto;
+        max-width: 768px;
+      }
+
+      header ul {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 1em 2em 1em 3em;
+      }
+
+      header .home-link {
+        bottom: 6px;
+        position: relative;
+      }
+
+      .main-container {
         margin: 0 auto;
         max-width: 768px;
         padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
@@ -102,6 +129,15 @@
       .children {
         padding: 8em 2em 5em 3em;
         text-align: left;
+      }
+
+      .navigation-container ul {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin: 3em 0 0 0;
+        padding-inline-start: 0;
       }
 
       footer {
@@ -128,7 +164,15 @@
     </style>
   </head>
   <body>
-    <div class="container">
+    <header>
+      <nav class="header-container">
+        <ul>
+          <li class="title">Bambach Blog</li>
+          <li class="home-link"><a href="/"><i class="icon" data-feather="layers"></i></a>&nbsp;&nbsp;Home</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main-container">
       <main>
         <p>Stille.</p>
       </main>
@@ -139,20 +183,27 @@
         <h3>h3 Subheadline</h3>
         <p class="stamp"><small><i class="icon" data-feather="user"></i>&nbsp;Axel Bambach <i class="icon" data-feather="clipboard"></i>&nbsp;20 March 2021</small></p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores harum, et ad facilis voluptatem temporibus ipsum non ipsam laudantium beatae neque sint earum ipsa exercitationem hic deleniti perspiciatis. Ea qui beatae&nbsp; <a href="">&raquo;&nbsp;weiterlesen</a></p>
+        <nav class="navigation-container">
+          <ul>
+            <li class="return-link"><a href=""><i class="icon" data-feather="arrow-left-circle"></i></a></li>
+            <li class="home-link"><a href="/"><i class="icon" data-feather="layers"></i></a></li>
+            <li class="forward-link"><a href=""><i class="icon" data-feather="arrow-right-circle"></i></a></li>
+          </ul>
+        </nav>
       </div>
     </div>
-      <footer>
-        <div class="footer-container">
-          <ul>
-            <li><a href=""><i class="icon" data-feather="send"></i></a>&nbsp;&nbsp;Write me an email</li>
-          </ul>
-          <ul>
-            <li><a href=""><i class="icon" data-feather="edit"></i></a>&nbsp;&nbsp;Impressum</li>
-            <li><a href=""><i class="icon" data-feather="alert-circle"></i></a>&nbsp;&nbsp;Legal Stuff</li>
-            <li><a href=""><i class="icon" data-feather="instagram"></i></a>&nbsp;&nbsp;Instagram</li>
-          </ul>
+    <footer>
+      <div class="footer-container">
+        <ul>
+          <li><a href=""><i class="icon" data-feather="send"></i></a>&nbsp;&nbsp;Write me an email</li>
+        </ul>
+        <ul>
+          <li><a href=""><i class="icon" data-feather="edit"></i></a>&nbsp;&nbsp;Impressum</li>
+          <li><a href=""><i class="icon" data-feather="alert-circle"></i></a>&nbsp;&nbsp;Legal Stuff</li>
+          <li><a href=""><i class="icon" data-feather="instagram"></i></a>&nbsp;&nbsp;Instagram</li>
+        </ul>
       </div>
-      </footer>
+    </footer>
     <script>
       feather.replace()
     </script>
