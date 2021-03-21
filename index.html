@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Scrapbook and Insights">
     <meta name="format-detection" content="telephone=no" />
     <meta name="robots" content="noindex, nofollow" />
-    <meta name="googlebot" content="noindex" />
-    <meta name="googlebot-news" content="noindex" />
+    <meta property="og:title" content="Bambach Blog" />
+    <meta property="og:image" content="" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
-    <title>Bambach Blog | News and Thoughts and Insights</title>
+    <title>Bambach Blog | Scrapbook and Insights</title>
     <script src="https://unpkg.com/feather-icons"></script>
     <!-- CSS -->
     <style>
       body {
-        background-color: #f2f2f2;
+        background-color: #fff;
         color: #222;
         font-family: system, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
           Bahnschrift, Oxygen-Sans, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans',
@@ -24,6 +25,10 @@
         overflow: auto;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
+      }
+
+      .canvas {
+        background-color: #f2f2f2;
       }
 
       a {
@@ -65,13 +70,13 @@
         font-weight:300;
         letter-spacing: .004em;
         line-height: 1.125;
-        margin: 12px 0;
+        margin-top: 12px;
       }
 
       hr {
-        background-color: gray;
+        background-color: #b2b2b2;
         border-width: 0;
-        color: gray;
+        color: #b2b2b2;
         height: 1px;
         margin: 0;
       }
@@ -114,30 +119,36 @@
       }
 
       .main-container {
-        margin: 0 auto;
-        max-width: 768px;
-        padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-      }
-
-      main {
         display: grid;
         min-height: 100vh;
-        padding: 0 2em;
+        height: 100%;
+        padding: 0 2em 0 3em;
         place-items: center;
       }
 
-      .children {
-        padding: 8em 2em 5em 3em;
-        text-align: left;
+      .posts-container {
+        margin: 0 auto;
+        max-width: 768px;
+        padding: 8em 2em 3em 3em;
       }
 
+      .stamp-container ul,
       .navigation-container ul {
         align-items: center;
         display: flex;
         justify-content: space-between;
         list-style: none;
-        margin: 3em 0 0 0;
+        margin: 2em 0 1em 0;
         padding-inline-start: 0;
+      }
+
+      .stamp-container ul {
+        justify-content: left;
+        line-height: 1.2;
+      }
+
+      .stamp-container ul li:nth-of-type(1) {
+        margin-right: 1em;
       }
 
       footer {
@@ -158,49 +169,57 @@
       footer ul {
         list-style: none;
         margin: 0;
-        padding: 0 2em 0m 3em;
         padding-inline-start: 0;
       }
     </style>
   </head>
   <body>
-    <header>
-      <nav class="header-container">
-        <ul>
-          <li class="title">Bambach Blog</li>
-          <li class="home-link"><a href="/"><i class="icon" data-feather="layers"></i></a>&nbsp;&nbsp;Home</li>
-        </ul>
-      </nav>
-    </header>
-    <div class="main-container">
-      <main>
-        <p>Stille.</p>
-      </main>
-      <!-- <hr> -->
-      <div class="children">
-        <h1>h1 The quick brown fox jumps over the lazy dog.</h1>
-        <h2>h2 The quick brown fox jumps over the lazy dog.</h2>
-        <h3>h3 Subheadline</h3>
-        <p class="stamp"><small><i class="icon" data-feather="user"></i>&nbsp;Axel Bambach <i class="icon" data-feather="clipboard"></i>&nbsp;20 March 2021</small></p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores harum, et ad facilis voluptatem temporibus ipsum non ipsam laudantium beatae neque sint earum ipsa exercitationem hic deleniti perspiciatis. Ea qui beatae&nbsp; <a href="">&raquo;&nbsp;weiterlesen</a></p>
-        <nav class="navigation-container">
+    <div class="canvas">
+      <header>
+        <nav class="header-container">
           <ul>
-            <li class="return-link"><a href=""><i class="icon" data-feather="arrow-left-circle"></i></a></li>
-            <li class="home-link"><a href="/"><i class="icon" data-feather="layers"></i></a></li>
-            <li class="forward-link"><a href=""><i class="icon" data-feather="arrow-right-circle"></i></a></li>
+            <li class="title">Bambach Blog</li>
+            <li class="home-link"><a href="/"><i class="icon" data-feather="layers"></i></a>&nbsp;&nbsp;Home</li>
           </ul>
         </nav>
-      </div>
+      </header>
+      <main>
+        <div class="main-container">
+          <p>Stille.</p>
+        </div>
+      </main>
+      <!-- <hr> -->
+      <section class="posts">
+        <div class="posts-container">
+          <h1>h1 The quick brown fox jumps over the lazy dog.</h1>
+          <h2>h2 The quick brown fox jumps over the lazy dog.</h2>
+          <h3>h3 Subheadline</h3>
+          <div class="stamp-container">
+            <ul>
+              <li class="user"><span><i class="icon" data-feather="user"></i>&nbsp;Axel Bambach</span></li>
+              <li class="date"><i class="icon" data-feather="clipboard"></i>&nbsp;20 March&nbsp;2021</li>
+            </ul>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores harum, et ad facilis voluptatem temporibus ipsum non ipsam laudantium beatae neque sint earum ipsa exercitationem hic deleniti perspiciatis. Ea qui beatae&nbsp; <a href="">&raquo;&nbsp;weiterlesen</a></p>
+          <nav class="navigation-container">
+            <ul>
+              <li class="return-link"><a href="/"><i class="icon" data-feather="arrow-left-circle"></i></a></li>
+              <li class="home-link"><a href="/"><i class="icon" data-feather="layers"></i></a></li>
+              <li class="forward-link"><a href="/"><i class="icon" data-feather="arrow-right-circle"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
     </div>
     <footer>
       <div class="footer-container">
         <ul>
-          <li><a href=""><i class="icon" data-feather="send"></i></a>&nbsp;&nbsp;Write me an email</li>
+          <li><a href="mailto:blog@bambachmail.com"><i class="icon" data-feather="send"></i></a>&nbsp;&nbsp;Write me an email</li>
         </ul>
         <ul>
-          <li><a href=""><i class="icon" data-feather="edit"></i></a>&nbsp;&nbsp;Impressum</li>
-          <li><a href=""><i class="icon" data-feather="alert-circle"></i></a>&nbsp;&nbsp;Legal Stuff</li>
-          <li><a href=""><i class="icon" data-feather="instagram"></i></a>&nbsp;&nbsp;Instagram</li>
+          <li><a href="/"><i class="icon" data-feather="edit"></i></a>&nbsp;&nbsp;Impressum</li>
+          <li><a href="/"><i class="icon" data-feather="alert-circle"></i></a>&nbsp;&nbsp;Legal Stuff</li>
+          <li><a href="https://www.instagram.com/essentialartisans/"><i class="icon" data-feather="instagram"></i></a>&nbsp;&nbsp;Instagram</li>
         </ul>
       </div>
     </footer>
