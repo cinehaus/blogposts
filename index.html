@@ -123,11 +123,10 @@
       }
 
       .main-container {
-        /* background: url("http://blog.paradieshotel.ch/images/1920x1200.jpg") no-repeat center center/cover; */
-        background: image-set(
-          "img/800x500.jpg" 1x, 
-          "img/1920x1200.jpg" 2x, 
-          "img/5120x2880.jpg" 3x) no-repeat center center/cover;
+        /* background-image: url("img/1920x1200.jpg"); */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         display: grid;
         min-height: 100vh;
         height: 100%;
