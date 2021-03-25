@@ -37,21 +37,71 @@
       }
 
       a {
-        color: #4da2ff;
+        color: #007aff;
         text-decoration: none;
       }
 
       a:hover, 
       a:active, 
       a:focus {
+        color: #4da2ff;
+      }
+
+      body {
+        background-color: #fff;
+        color: #222;
+        font-family: system, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+          Bahnschrift, Oxygen-Sans, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans',
+          Roboto, sans-serif;
+        margin: 0;
+        overflow: auto;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .canvas {
+        background-color: #f2f2f2;
+      }
+
+      a {
         color: #007aff;
+        text-decoration: none;
+      }
+
+      a:hover, 
+      a:active, 
+      a:focus {
+        color: #4da2ff;
       }
 
       p {
         font-size: 1.25rem;
         font-weight: normal;
+        -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+                -moz-hyphens: auto;
+                    hyphens: auto;
+        -webkit-hyphenate-limit-before: 3;
+        -webkit-hyphenate-limit-after: 2;
+        -webkit-hyphenate-limit-chars: 6 3 2;
+            -ms-hyphenate-limit-chars: 6 3 2;
+                -moz-hyphenate-limit-zone: 8%;
+                    hyphenate-limit-chars: 6 3 2;
+        -webkit-hyphenate-limit-lines: 2;
+            -ms-hyphenate-limit-lines: 2;
+                -moz-hyphenate-limit-lines: 2;
+                    hyphenate-limit-lines: 2;
+        -webkit-limit-last: always;
+            -ms-hyphenate-limit-last: always;
+                -moz-hyphenate-limit-last: always;
+                    hyphenate-limit-last: always;
+        -webkit-hyphenate-limit-zone: 8%;
+            -ms-hyphenate-limit-zone: 8%;
+                -moz-hyphenate-limit-chars: 6 3 2;
+                    hyphenate-limit-zone: 8%;
         line-height: 1.25;
-        margin: 8px 0;
+        margin: 14px 0;
       }
 
       h1 {
@@ -111,12 +161,20 @@
       }
 
       header ul {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         list-style: none;
         margin: 0;
-        padding-inline-start: 0;
+        -webkit-padding-start: 0;
+            -moz-padding-start: 0;
+                padding-inline-start: 0;
       }
 
       header .home-link {
@@ -129,6 +187,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        display: -ms-grid;
         display: grid;
         height: 100%;
         min-height: 100vh;
@@ -144,16 +203,26 @@
 
       .stamp-container ul,
       .navigation-container ul {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         list-style: none;
         margin: 2em 0 1em 0;
-        padding-inline-start: 0;
+        -webkit-padding-start: 0;
+           -moz-padding-start: 0;
+                padding-inline-start: 0;
       }
 
       .stamp-container ul {
-        justify-content: left;
+        -webkit-box-pack: left;
+            -ms-flex-pack: left;
+                justify-content: left;
         line-height: 1.2;
       }
 
@@ -167,8 +236,10 @@
       }
 
       .footer-container {
+        display: -ms-grid;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         line-height: 2;
         margin: 0 auto;
         max-width: 768px;
@@ -179,9 +250,10 @@
       footer ul {
         list-style: none;
         margin: 0;
-        padding-inline-start: 0;
-      }
-    </style>
+        -webkit-padding-start: 0;
+           -moz-padding-start: 0;
+                padding-inline-start: 0;
+      }    </style>
   </head>
   <body>
     <div class="canvas">

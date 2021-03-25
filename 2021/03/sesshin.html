@@ -37,21 +37,43 @@
       }
 
       a {
-        color: #4da2ff;
+        color: #007aff;
         text-decoration: none;
       }
 
       a:hover, 
       a:active, 
       a:focus {
-        color: #007aff;
+        color: #4da2ff;
       }
 
       p {
         font-size: 1.25rem;
         font-weight: normal;
+        -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+                -moz-hyphens: auto;
+                    hyphens: auto;
+        -webkit-hyphenate-limit-before: 3;
+        -webkit-hyphenate-limit-after: 2;
+        -webkit-hyphenate-limit-chars: 6 3 2;
+            -ms-hyphenate-limit-chars: 6 3 2;
+                -moz-hyphenate-limit-zone: 8%;
+                    hyphenate-limit-chars: 6 3 2;
+        -webkit-hyphenate-limit-lines: 2;
+            -ms-hyphenate-limit-lines: 2;
+                -moz-hyphenate-limit-lines: 2;
+                    hyphenate-limit-lines: 2;
+        -webkit-limit-last: always;
+            -ms-hyphenate-limit-last: always;
+                -moz-hyphenate-limit-last: always;
+                    hyphenate-limit-last: always;
+        -webkit-hyphenate-limit-zone: 8%;
+            -ms-hyphenate-limit-zone: 8%;
+                -moz-hyphenate-limit-chars: 6 3 2;
+                    hyphenate-limit-zone: 8%;
         line-height: 1.25;
-        margin: 8px 0;
+        margin: 14px 0;
       }
 
       h1 {
@@ -111,12 +133,20 @@
       }
 
       header ul {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+            display: -ms-flexbox;
+                display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         list-style: none;
         margin: 0;
-        padding-inline-start: 0;
+        -webkit-padding-start: 0;
+            -moz-padding-start: 0;
+                padding-inline-start: 0;
       }
 
       header .home-link {
@@ -126,7 +156,8 @@
 
       .main-container {
         /* background-image: url("img/1920x1200.jpg"); */
-        align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -148,16 +179,26 @@
 
       .stamp-container ul,
       .navigation-container ul {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+            display: -ms-flexbox;
+                display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         list-style: none;
         margin: 2em 0 1em 0;
-        padding-inline-start: 0;
+        -webkit-padding-start: 0;
+            -moz-padding-start: 0;
+                padding-inline-start: 0;
       }
 
       .stamp-container ul {
-        justify-content: left;
+        -webkit-box-pack: left;
+            -ms-flex-pack: left;
+                justify-content: left;
         line-height: 1.2;
       }
 
@@ -171,8 +212,10 @@
       }
 
       .footer-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        display: -ms-grid;
+            display: grid;
+        -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         line-height: 2;
         margin: 0 auto;
         max-width: 768px;
@@ -183,7 +226,9 @@
       footer ul {
         list-style: none;
         margin: 0;
-        padding-inline-start: 0;
+        -webkit-padding-start: 0;
+            -moz-padding-start: 0;
+                padding-inline-start: 0;
       }
     </style>
   </head>
@@ -212,7 +257,7 @@
           <p>Die Familienmitglieder müssten zusätzlich mindestens fünf weitere Tage lang abwarten, um wissen zu können, ob sie innerhalb des Lockdowns infiziert wurden oder nicht. Zur Unterbrechung der Ansteckungskette hätte die zeitliche Dauer des von Angela Merkel angekündigten und wieder verworfenen Oster-Intensiv-Lockdowns also leider nicht ausgereicht.</p>
           <p>Der gewählte Zeitpunkt kam zusätzlich überraschend, weil Ostern ja nun einmal von den christlichen Kirchen als deren höchster Feiertag beansprucht wird. Das ist verständlich, denn es gilt den Tod und die Auferstehung Jesu Christi angemessen zu würdigen. Und die Frist zur Vorbereitung für entsprechende Gesetzesvorlagen war zu kurz, wie man spätestens seit der &ndash; übrigens aus menschlicher Sicht ausgesprochen beeindruckenden &ndash; Rücknahmerklärung durch Angela Merkel weiß. Ich nehme an, dass beim Vorschlag die Gunst der Stunde eine Rolle spielte, schließlich fehlten zu Ostern nur wenige zusätzliche Tage, um auf eine ordentliche Folge von Ruhetagen zu kommen.</p>
           <p>Schade eigentlich, denn ich finde die Idee hat grundsätzlich richtig viel Charme.</p>
-          <p>Im Zen-Buddhismus ist ein Sesshin 接心 (wörtlich &bdquo;Versammlung oder Konzentration des Geistes&ldquo;) eine intensive Zeit der Nicht-Ablenkung. Es findet an einem Rückzugsort statt und das Programm ist gekennzeichnet durch Schweigen und häufige Meditationen. Ich habe noch vor der Corona-Zeit im <a href="https://www.meditationshaus-dietfurt.de" target="_blank" rel="noopener noreferrer">Franziskaner-Kloster Dietfurth</a> zwei Wochen schweigend verbracht. Kein strenges Sesshin, sondern mildere Einführungskurse in das Zazen, aber nicht weniger beeindruckend. Es war eine unglaubliche Erfahrung, wie sich die Sicht auf viele alltägliche Dinge durch bewusstes Weglassen intensiviert. Daher konnte ich mir den Oster-Lockdown nicht nur gut vorstellen, sondern hatte mich sogar darauf gefreut.</p>
+          <p>Im Zen-Buddhismus ist ein Sesshin 接心 (wörtlich &bdquo;Konzentration des Geistes&ldquo;) eine intensive Zeit der Nicht-Ablenkung. Es findet an einem Rückzugsort statt und das Programm ist gekennzeichnet durch Schweigen und häufige Meditationen. Ich habe noch vor der Corona-Zeit im <a href="https://www.meditationshaus-dietfurt.de" target="_blank" rel="noopener noreferrer">Franziskaner-Kloster Dietfurth</a> zwei Wochen schweigend verbracht. Kein strenges Sesshin, sondern mildere Einführungskurse in das Zazen, aber nicht weniger beeindruckend. Es war eine unglaubliche Erfahrung, wie sich die Sicht auf viele alltägliche Dinge durch bewusstes Weglassen intensiviert. Daher konnte ich mir den Oster-Lockdown nicht nur gut vorstellen, sondern hatte mich sogar darauf gefreut.</p>
           <p>Aber wäre so etwas wirklich in ganz Deutschland denkbar? Mit allen, auch jenen Menschen, die sich weder für Zen-Buddhismus begeistern, noch überhaupt für derlei Dinge? Ich denke, wenn so etwas als nationale Herausforderung im allgemeinen Notstand, quasi zum gemeinsamen Happening deklariert, gut kommuniziert und vorbereitet worden wäre, dann vielleicht schon.</p>
           <p>Das öffentlich-rechtliche Fernsehen würde vormittags mehrere Programmstränge für die unterschiedlichsten Altersgruppen ausstrahlen, als Homeschooling in einer Qualität, wie wir es uns schon lange wünschen &ndash; mit einer Mischung aus spannender Sachkunde, regelmäßig durch Unterhaltsames unterbrochen. Am Nachmittag dann moderiert der Klassenlehrer einen lockeren Video-Chat mit &bdquo;seinen&ldquo; Schülern, damit sich keiner aus den Augen verliert, anschließend konferieren Freunde privat miteinander.</p>
           <p>Für die Erwachsenen gibt es Besinnung, Lektüre, Familie. Notfalls Telefon oder Videochat. Ab und zu raus an die frische Luft, ohne Kontakte. Viele praktische Fragen wären vorab zu klären, beispielsweise welchen Vorrat man denn beschaffen müsste, um davon zwei Wochen ohne Einkaufsmöglichkeit zu leben. Und wer würde nicht am Lockdown teilnehmen dürfen, weil er unentbehrliche Aufgaben zu erfüllen hat? Allein schon darüber nachzudenken, würde unsere zukünftige Gesellschaft fester zusammenschweißen.</p>
